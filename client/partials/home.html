@@ -1,4 +1,4 @@
-<div ng-controller="myController">
+<div ng-controller="homeController">
     <div class="row col-sm-8 top-buffer" id="stock_list">
       <table class="row col-sm-10 table-striped" id="stock_list">
         <thead>
@@ -38,7 +38,7 @@
         </tbody>
       </table>
       <div class="row">
-        <form action="callCgi()">
+        <form ng-submit="callCgi()">
           <label for="cgi">CGI TEST</label>
           <input type="text" ng-model='cgi_param'>
           <button type='submit' class="btn btn-primary">Hope this works</button>
