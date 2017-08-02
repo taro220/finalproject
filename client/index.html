@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src='app.js'></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <header id="header" class="row col-sm-8">
+    <nav id="main-menu">
+      <ul>
+        <li class="col-sm-1"><a href='#'>Home</a></li>
+        <li class="col-sm-1"><a href='#'>Buy</a></li>
+        <li class="col-sm-1"><a href='#'>Sell</a></li>
+        <li class="col-sm-1"><a href='#'>Ledger</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="container">
+    <div ng-view ="">
+    </div>
+  </div>
+</div>
+  </body>
+</html>
